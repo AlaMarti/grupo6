@@ -26,6 +26,21 @@ const productController = {
 
     },
     
+    api: (req, res)=> {
+        db.Product.findAll({
+            include: [{ association: "categoria" }],
+            where: {
+                deleted: 0
+            },
+            raw: true
+            })
+            .then((p) => {
+                let products = p.filter((p => p.deleted == 0))
+                return res.json(products);
+            })
+
+    },
+    
     search: function (req, res) {
         db.Product.findAll({
             include: [{ association: "categoria" }],

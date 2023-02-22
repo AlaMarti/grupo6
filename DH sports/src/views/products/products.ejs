@@ -15,7 +15,7 @@
         <%- include('../partials/header') %>
     </header>
 
-    <section aria-label="Newest Photos">
+    <!-- <section aria-label="Newest Photos">
         <div class="carousel" data-carousel>
             <button class="carousel-button prev" data-carousel-button="prev">&#8678;</button>
             <button class="carousel-button next" data-carousel-button="next">&#8680;</button>
@@ -31,7 +31,7 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </section> -->
     
     <div class="categorias">
         <div class="start-icon"><i class="fa-solid fa-futbol fa-border fa-2xl"></i></div>
@@ -42,7 +42,7 @@
     
     <main>
         <div class="titulo-boton">
-            <h2 class="titulo">Todos los productos</h2>
+            <h2 class="bla">Todos los productos</h2>
             <% if(userLogged !== undefined && userLogged.role === 'Admin'){ %>
                 <a href="/products/create" class="boton-addProduct"><button type="submit" class="agregarProducto">Agregar producto</button></a>
             <% } %>

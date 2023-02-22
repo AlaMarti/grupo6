@@ -9,6 +9,14 @@ const userLogged = require('../middlewares/userLoggedMiddleware');
 const Op = Sequelize.Op;
 
 const usersControllers = {
+    
+    api: (req, res)=> {
+        db.User.findAll()
+            .then((p) => {
+                let users = p.filter((p => p.deleted == 0))
+                return res.json(users);
+            })
+    },
 
     login:(req,res) => {
         res.render('users/login');

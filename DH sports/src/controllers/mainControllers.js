@@ -21,7 +21,6 @@ let mainControllers = {
             })
 
     },
-
     register:(req,res) => {
         res.render('users/register');
     },

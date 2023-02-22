@@ -5,6 +5,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.bla{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #E3E3E3;
+}
 /* carrousel */
 *::before, *::after{
     box-sizing: border-box;

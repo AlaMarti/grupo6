@@ -20,5 +20,8 @@ router.get('/profile', authMiddleware, usersControllers.profile)
 
 router.get('/logout', usersControllers.logout);
 
+//Rutas Api
+router.get('/api', usersControllers.api);
+
 
 module.exports = router
